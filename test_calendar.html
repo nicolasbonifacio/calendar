@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript" src="calendar.js">
+</script>
+
+</head>
+
+<body onload="createMask(DEFAULT_DATE_FORMAT, true)">
+
+<script language="javascript" type="text/javascript">
+var DEFAULT_DATE_FORMAT = 1;
+</script>
+
+<table id="calendarPosition">
+	<tr>
+		<td >
+			<input type="text" id="selectedDateField" size="15" onkeyup="validateDateInput(DEFAULT_DATE_FORMAT)" onmousedown="createMask(DEFAULT_DATE_FORMAT, false)" onfocusout="createMask(DEFAULT_DATE_FORMAT, true)">
+		</td>
+		<td>
+			<a href="javascript:createCalendar(DEFAULT_DATE_FORMAT)"><img src="calendar_img.png" width="20" height="20"></a>
+		</td>
+	</tr>
+</table>	
+
+</body>
+</html>
